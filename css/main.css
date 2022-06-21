@@ -83,7 +83,7 @@ body{
   padding: 60px 142px 10px 60px;
 }
 
-span{
+.left-txt{
   color: #FFFFFF;
   font-weight: 500;
   font-size: 14px;
@@ -115,7 +115,7 @@ h1{
   display: inline-block;
   display: flex;
   justify-content: center;
-  margin-top: 37px;
+  margin-top: 54px;
   width: 570px;
   background: #4DC490;
   border-radius: 0px 0px 20px 20px;  
@@ -148,11 +148,25 @@ h2{
   
 }
 
+/* .name-box{
+  display: inline-block;
+  margin-bottom: 35px;
+}
+
+.surname-box{
+  margin-bottom: 35px;
+}
+
+.email-box{
+  margin-bottom: 35px;
+} */
+
+
+
 input{
   font-weight: 600;
   font-size: 18px;
   line-height: 22px; 
-  margin-bottom: 35px;
   padding-bottom: 11px;
   border: none;
   width: 450px;
@@ -160,15 +174,34 @@ input{
   border-bottom: 1px solid #000;
 }
 
-.password-box{
-  margin-bottom: 63px;
+.required-txt{
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 18px;
+  opacity: 0;
 }
+
+input:not(:placeholder-shown):not(:focus):invalid{
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+
+input:not(:placeholder-shown):not(:focus):invalid ~ .required-txt{
+  text-align: right;
+  margin-top: 4px;
+  margin-bottom: 18px;
+  color: red;
+  opacity: 1;
+}
+
 
 .btn{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 88px;
   padding: 20px 138px;
   font-weight: 600;
   font-size: 16px;
@@ -182,9 +215,9 @@ input{
 
 .terms-text{
   font-weight: 400;
-font-size: 11px;
-line-height: 15px;
-color: #555555;
+  font-size: 11px;
+  line-height: 15px;
+  color: #555555;
 }
 
 
