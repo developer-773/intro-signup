@@ -186,8 +186,7 @@ input:not(:placeholder-shown):not(:focus):invalid{
   border-bottom: 1px solid red;
 }
 
-
-input:not(:placeholder-shown):not(:focus):invalid ~ .required-txt{
+input:not(:placeholder-shown):not(:focus):invalid + .required-txt{
   text-align: right;
   margin-top: 4px;
   margin-bottom: 18px;
